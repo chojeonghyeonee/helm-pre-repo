@@ -1,0 +1,20 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  labels:
+    app.kubernetes.io/managed-by: "Helm"
+  annotations:
+    meta.helm.sh/release-name: "myapp"
+    meta.helm.sh/release-namespace: "default"
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"storage.k8s.io/v1","kind":"StorageClass","metadata":{"annotations":{},"name":"gp3"},"parameters":{"csi.storage.k8s.io/fstype":"ext4","type":"gp3"},"provisioner":"ebs.csi.aws.com"}
+  creationTimestamp: "2024-09-30T00:36:35Z"
+  name: gp3
+  resourceVersion: "2737"
+  uid: 80eec1f7-e5dd-4dcc-9dc3-ade95fdf2eb7
+parameters:
+  csi.storage.k8s.io/fstype: ext4
+  type: gp3
+provisioner: ebs.csi.aws.com
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
