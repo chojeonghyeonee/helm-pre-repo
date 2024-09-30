@@ -3,11 +3,11 @@ entries:
   myapp:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2024-09-30T07:36:54.282390197Z"
+    created: "2024-09-30T07:58:49.993055549Z"
     description: test app
-    digest: 9ae4a249905bacf0d3bbae0f25a3f2e64d2749d79d9f04a6b754017b4c573823
+    digest: e9c5dc6820061d9cf85f69d97d9706a44ac1cdbff81020637cb6771ab88eabe3
     name: myapp
     urls:
     - https://chojeonghyeonee.github.io/helm-pre-repo/myapp-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-30T07:36:54.281924878Z"
+generated: "2024-09-30T07:58:49.992602432Z"
